@@ -1,56 +1,40 @@
-# ALX Project 0x00: Setup
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Introduction
-This project demonstrates how to create a Next.js application using cli-tools like `npx` with `create-next-app`. We'll focus on setting up a project with TypeScript, ESLint, Tailwind CSS, and custom import aliases.
+## Getting Started
 
-## Prerequisites
-- Node.js installed on your machine
-- npm (Node Package Manager)
-- Visual Studio Code
+First, run the development server:
 
-## Project Setup
-
-### Method 1: Interactive Setup
-You can create a Next.js project using the interactive prompts:
 ```bash
-npx create-next-app@latest
-```
-This will guide you through various configuration options.
-
-### Method 2: Direct Configuration (Used in this project)
-For this project, we use predefined options to set up our environment:
-
-1. Open Visual Studio Code
-2. Open a new terminal (Terminal -> New Terminal)
-3. Navigate to your desired project directory
-4. Run the following command:
-    ```bash
-    npx create-next-app@latest alx-project-0x00 --typescript
-    ```
-5. When prompted, select the following options:
-    - ESLint: **Yes**
-    - Tailwind CSS: **Yes**
-    - Import alias: **Yes**
-    - /src directory: **No**
-    - App Router: **No**
-
-## Running the Application
-To start the development server on port 3000:
-```bash
-cd alx-project-0x00
-npm run dev -- -p 3000
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Project Structure
-After setup, your project will contain:
-- TypeScript configuration
-- ESLint for code quality
-- Tailwind CSS for styling
-- Custom import aliases for cleaner imports
-- Pages router (not App router)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Next Steps
-- Explore the project structure
-- Modify the homepage in `pages/index.tsx`
-- Add new pages and components
-- Customize your Tailwind CSS configuration
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+
+This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
